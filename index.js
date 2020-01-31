@@ -227,7 +227,7 @@ i{
 
 function pdfConvert(){
 var pdf = require('html-pdf');
-var html = fs.readFileSync('/Users/tsolmon/Downloads/homework7/Assets/Profile.html', 'utf8');
+var html = fs.readFileSync('./profile.html', 'utf8');
 var options = { format: 'a4' };
  
 pdf.create(html, options).toFile('./DeveloperPortfolio.pdf', function(err) {
